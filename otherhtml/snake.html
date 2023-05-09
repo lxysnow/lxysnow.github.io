@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML5贪食蛇网页游戏</title>
+	</head>
+	<link rel="stylesheet" href="../styles/snake.css">
+	<body>
+		<!-- 引用导航栏页面 -->
+		<iframe src="../header.html" frameborder="0"></iframe>
+		<!--游戏区域-->
+		<div class="wrap">
+
+			<div class="fen">
+				<span id="fens" style="font-size: 50px;">点击任意键开始游戏<br />
+					按Shift加速<br />方向键控制移动<br />Alt键重新开始</span>
+			</div>
+			<!-- 食物 -->
+			<div class="food" style="opacity: 1;"></div>
+			<!--本体-->
+			<ul class="sbody">
+				<!--头部-->
+				<li class="hand"></li>
+			</ul>
+		</div>
+
+		<!-- <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+			<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+			<p>来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人素材</a></p>
+		</div> -->
+	</body>
+	<script type="text/javascript" src="../scripts/snake.js"></script>
+</html>

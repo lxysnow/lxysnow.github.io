@@ -1,0 +1,31 @@
+html {
+	font-family: sans-serif;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+h1,
+p,
+.form
+{
+	width: 40%;
+	/* 设置盒子的宽度 */
+	margin: 0 auto;
+	/* 实现居中对齐 */
+	align-content: center;
+}
+
+/* .resultParas里面有 p 标签，设置的时候会受到上面 p 标签样式的影响 所以不用单独设置！！！ */
+
+.form input[type="number"] {
+	width: 200px;
+}
+
+.lastResult {
+	color: white;
+	padding: 3px;
+}
