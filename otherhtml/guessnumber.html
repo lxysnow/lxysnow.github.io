@@ -2,13 +2,34 @@
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
-
 		<title>Number guessing game</title>
-		<link type="text/css" href="../styles/guessnumber.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="../styles/header.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/guessnumber.css" />
 	</head>
 
 	<body>
-		<iframe src="../header.html" frameborder="0"></iframe>
+		<header>
+			<div class="header-top">
+				<div class="logo">M</div>
+				<h1>欢迎来到游戏世界</h1>
+			</div>
+			<nav>
+				<ul>
+					<!-- target="_top" 表示在当前窗口打开链接 可以解决 <iframe> 引入外部 HTML 文件时，遇到跨域问题和无法跳转页面的问题-->
+					<li><a href="../index.html" target="_top" class="head">首页</a></li>
+					<li class="head" id="dropdown">游戏
+						<ul>
+							<li><a href="gobang.html" target="_top" class="game">五子棋</li>
+							<li><a href="snake.html" target="_top" class="game">贪吃蛇</li>
+							<li><a href="guessnumber.html" target="_top" class="game">猜数字</li>
+						</ul>
+					</li>
+					<li><a href="#" class="head">产品</a></li>
+					<li><a href="#" class="head">关于我们</a></li>
+				</ul>
+			</nav>
+		</header>
 		<h1>数字猜谜游戏</h1>
 
 		<p>我们选择了一个介于1和100之间的随机数。看看你是否能在10次或更短的时间内猜到。</p>

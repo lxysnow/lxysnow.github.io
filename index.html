@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-	<iframe src="header.html" frameborder="0"></iframe>
-
-    <!-- 图片轮播 -->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="https://picsum.photos/800/400?random=1" alt="Slide 1">
-            <div class="text">图1说明文字</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="https://picsum.photos/800/400?random=2" alt="Slide 2">
-            <div class="text">图2说明文字</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="https://picsum.photos/800/400?random=3" alt="Slide 3">
-            <div class="text">图3说明文字</div>
-        </div>
-    </div>
-    <!-- 主体内容 - 卡片排列 -->
-    <div class="cards">
-        <div class="card">
-            <img src="./images/gobang.jpg" alt="卡片1">
-            <h2><a href="otherhtml/gobang.html">五子棋</a></h2>
-            <p>小游戏</p>
-        </div>
-        <div class="card">
-            <img src="./images/snake.png" alt="卡片2">
-            <h2><a href="otherhtml/snake.html">贪吃蛇</a></h2>
-            <p>小游戏</p>
-        </div>
-        <div class="card">
-            <img src="./images/guessnumber.jpg" alt="卡片3">
-            <h2><a href="otherhtml/guessnumber.html">猜数字</a></h2>
-            <p>小游戏</p>
-        </div>
-        <div class="card">
-            <img src="https://picsum.photos/300/200?random=8" alt="卡片4">
-            <h2>卡片标题4</h2>
-            <p>卡片内容4</p>
-        </div>
-    </div>
-
-    <script src="./scripts/slideshow.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Website</title>
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="./styles/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="header-top">
+				<div class="logo">M</div>
+				<h1>欢迎来到游戏世界</h1>
+			</div>
+			<nav>
+				<ul>
+					<!-- target="_top" 表示在当前窗口打开链接 可以解决 <iframe> 引入外部 HTML 文件时，遇到跨域问题和无法跳转页面的问题-->
+					<li><a href="index.html" target="_top" class="head">首页</a></li>
+					<li class="head" id="dropdown">游戏
+						<ul>
+							<li><a href="otherhtml/gobang.html" target="_top" class="game">五子棋</li>
+							<li><a href="otherhtml/snake.html" target="_top" class="game">贪吃蛇</li>
+							<li><a href="otherhtml/guessnumber.html" target="_top" class="game">猜数字</li>
+						</ul>
+					</li>
+					<li><a href="#" class="head">产品</a></li>
+					<li><a href="#" class="head">关于我们</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- 图片轮播 -->
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="./images/10.jpeg" alt="rabbit">
+					<div class="text">图1说明文字</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="./images/11.jpeg" alt="Slide 2">
+					<div class="text">图2说明文字</div>
+				</div>
+				<div class="mySlides fade">
+					<img src="./images/9.jpeg" alt="Slide 3">
+					<div class="text">图3说明文字</div>
+				</div>
+			</div>
+			<!-- 主体内容 - 卡片排列 -->
+			<div class="cards">
+				<div class="card">
+					<img src="./images/gobang.jpg" alt="卡片1">
+					<h2><a href="otherhtml/gobang.html">五子棋</a></h2>
+					<p>小游戏</p>
+				</div>
+				<div class="card">
+					<img src="./images/snake.png" alt="卡片2">
+					<h2><a href="otherhtml/snake.html">贪吃蛇</a></h2>
+					<p>小游戏</p>
+				</div>
+				<div class="card">
+					<img src="./images/guesslogo.jpg" alt="卡片3">
+					<h2><a href="otherhtml/guessnumber.html">猜数字</a></h2>
+					<p>小游戏</p>
+				</div>
+				<div class="card">
+					<img src="./images/7.jpg" alt="卡片4">
+					<h2>卡片标题4</h2>
+					<p>卡片内容4</p>
+				</div>
+			</div>
+		</main>
+		<script src="./scripts/slideshow.js"></script>
+	</body>
 </html>

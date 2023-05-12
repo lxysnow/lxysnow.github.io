@@ -6,7 +6,7 @@ var canvas = document.getElementById("myCanvas");
 			//线条的宽度像素
 			ctx.lineWidth = 1;
 
-			var space = 60; //棋盘边界与画布边界的间距
+			var space = 50; //棋盘边界与画布边界的间距
 			var cell_num = 18; //一共几个格子
 			var width = $("#container2").width() - space * 2; // 棋盘的宽度
 			var height = $("#container2").height() - space * 2; // 棋盘的高度

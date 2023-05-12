@@ -1,70 +1,54 @@
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+/* 基础设置 */
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-
-/* 图片轮播样式 */
-.slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-width: 100%;
-height: auto;
-}
-
-.text {
-color: #f2f2f2;
-font-size: 12px;
-position: absolute;
-bottom: 0;
-left: 50%;
-transform: translateX(-50%);
-background-color: rgba(0, 0, 0, 0.5);
-padding: 10px;
+body {
+  width: 40%;
+  min-width: 840px;
+  margin: 0 auto;
 }
 
 /* 卡片排列样式 */
 .cards {
-max-width: 800px;
-margin: auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+	max-width: 840px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .card {
-width: calc(25% - 20px);
-margin-bottom: 40px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-transition: 0.3s;
+	width: calc(25% - 20px);
+	margin-bottom: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
 }
 
 .card:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-width: 100%;
-height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .card h2 {
-font-size: 24px;
-margin: 20px;
+	font-size: 24px;
+	margin: 20px;
 }
 
 .card p {
-font-size: 16px;
-margin: 20px;
-line-height: 1.5;
+	font-size: 16px;
+	margin: 20px;
+	line-height: 1.5;
 }
-
+.card a{
+	text-decoration: none;
+	color: mediumpurple;
+}
+.card a:hover{
+	color: #FFB6C1;
+}
