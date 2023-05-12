@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Number guessing game</title>
-		
+
 		<link rel="stylesheet" type="text/css" href="../styles/header.css" />
 		<link rel="stylesheet" type="text/css" href="../styles/guessnumber.css" />
 	</head>
@@ -23,6 +23,7 @@
 							<li><a href="gobang.html" target="_top" class="game">五子棋</li>
 							<li><a href="snake.html" target="_top" class="game">贪吃蛇</li>
 							<li><a href="guessnumber.html" target="_top" class="game">猜数字</li>
+							<li><a href="otherhtml/puzzle.html" class="game">拼&nbsp;&nbsp;&nbsp;图</a></li>
 						</ul>
 					</li>
 					<li><a href="#" class="head">产品</a></li>
@@ -30,21 +31,22 @@
 				</ul>
 			</nav>
 		</header>
-		<h1>数字猜谜游戏</h1>
+		<main>
+			<h1>数字猜谜游戏</h1>
 
-		<p>我们选择了一个介于1和100之间的随机数。看看你是否能在10次或更短的时间内猜到。</p>
-		<div class="form">
-			<label for="guessField">你猜是几: </label>
-			<input type="number" min="1" max="100" required id="guessField" class="guessField">
-			<input type="submit" value="提交" class="guessSubmit">
-		</div>
+			<p>我们选择了一个介于1和100之间的随机数。看看你是否能在10次或更短的时间内猜到。</p>
+			<div class="form">
+				<label for="guessField">你猜是几: </label>
+				<input type="number" min="1" max="100" required id="guessField" class="guessField">
+				<input type="submit" value="提交" class="guessSubmit">
+			</div>
 
-		<div class="resultParas">
-			<p class="guesses"></p>
-			<p class="lastResult"></p>
-			<p class="lowOrHi"></p>
-		</div>
-
-		<script src="../scripts/guessnumber.js" type="text/javascript"></script>
+			<div class="resultParas">
+				<p class="guesses"></p>
+				<p class="lastResult"></p>
+				<p class="lowOrHi"></p>
+			</div>
+		</main>
 	</body>
+	<script src="../scripts/guessnumber.js" type="text/javascript"></script>
 </html>

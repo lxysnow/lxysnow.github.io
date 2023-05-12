@@ -8,6 +8,13 @@ body {
   margin: 0 auto;
 }
 
+main{
+	width: 800px;
+	background-color: #FFB6C1;
+	padding: 15px 20px;
+	margin: 20px auto;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 h1,
 p,
 .form
@@ -17,6 +24,8 @@ p,
 	margin: 0 auto;
 	/* 实现居中对齐 */
 	align-content: center;
+	color: #FFFFFF;
+	margin: 5px auto;
 }
 
 /* .resultParas里面有 p 标签，设置的时候会受到上面 p 标签样式的影响 所以不用单独设置！！！ */
@@ -27,5 +36,6 @@ p,
 
 .lastResult {
 	color: white;
-	padding: 3px;
+	padding:5px;
+	margin: 5px auto;
 }

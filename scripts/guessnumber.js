@@ -10,13 +10,13 @@ let resetButton;
 function checkGuess() {
 	const userGuess = Number(guessField.value);
 	if (guessCount === 1) {
-		guesses.textContent = 'Previous guesses: ';
+		guesses.textContent = '历史猜测: ';
 	}
 
 	guesses.textContent += userGuess + ' ';
 
 	if (userGuess === randomNumber) {
-		lastResult.textContent = 'Congratulations! You got it right!';
+		lastResult.textContent = '恭喜你! 你猜对啦!';
 		lastResult.style.backgroundColor = 'green';
 		lowOrHi.textContent = '';
 		setGameOver();
@@ -25,12 +25,12 @@ function checkGuess() {
 		lowOrHi.textContent = '';
 		setGameOver();
 	} else {
-		lastResult.textContent = 'Wrong!';
-		lastResult.style.backgroundColor = 'red';
+		lastResult.textContent = '错!';
+		lastResult.style.backgroundColor = 'firebrick';
 		if (userGuess < randomNumber) {
-			lowOrHi.textContent = 'Last guess was too low!';
+			lowOrHi.textContent = '这个数猜小了!';
 		} else if (userGuess > randomNumber) {
-			lowOrHi.textContent = 'Last guess was too high!';
+			lowOrHi.textContent = '这个数猜大了!';
 		}
 	}
 
@@ -45,7 +45,7 @@ function setGameOver() {
 	guessField.disabled = true;
 	guessSubmit.disabled = true;
 	resetButton = document.createElement('button');
-	resetButton.textContent = 'Start new game';
+	resetButton.textContent = '开始新游戏';
 	document.body.appendChild(resetButton);
 	resetButton.addEventListener('click', resetGame);
 }
