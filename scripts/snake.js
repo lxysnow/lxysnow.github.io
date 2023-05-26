@@ -132,16 +132,16 @@ window.onload = function() {
 	function getRandom(min, max) {
 		return Math.floor(Math.random() * (max - min) + min);
 	}
-	//宽度30个，高度20个
+	//宽度27个，高度20个
 	function foods() {
 		//		food.style.backgroundColor = "rgba(" + getRandom(0, 255) + "," + getRandom(0, 255) + "," + getRandom(0, 255) + ",1)";
 		var foodRandomT = getRandom(0, 20);
-		var foodRandomL = getRandom(0, 30);
+		var foodRandomL = getRandom(0, 27);
 		//不把食物在身体上
 		for (var i = 0; i < arrT.length; i++) {
 			while (foodRandomT == arrT[i] && foodRandomL == arrL[i]) {
 				foodRandomT = getRandom(0, 20);
-				foodRandomL = getRandom(0, 30);
+				foodRandomL = getRandom(0, 27);
 				i = 0;
 			}
 		}
